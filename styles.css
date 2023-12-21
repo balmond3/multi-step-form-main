@@ -48,11 +48,10 @@ img {
     display: flex;
     flex-direction: column;
    padding-top:20px;    
-    padding-right: 50px;
-    padding-bottom: 50px;
-    gap: 5px;
-    width: 500px;
-    justify-content:space-between;
+   
+   
+    height: 550px;
+
     
 
 }
@@ -62,7 +61,8 @@ img {
     padding: 10px;
     border-radius: 20px;
     width: 100%;
-    height:580px;
+   height: 580px;
+  
     
 }
 
@@ -72,6 +72,7 @@ img {
 }
 .title{
     border:5px solid black;
+    height: 120px;
 }
 
 .blur {
@@ -79,23 +80,17 @@ img {
 }
 .main-content{
     border: 5px solid black;
+    height: 300px;
    
 }
 
 .label {
     color: var(--Marine-blue);
-    font-size: small;
+    font-size: medium;
 
     font-weight: bold
 }
 
-.step-4b,
-.step-1,
-.step-2,
-.step-3,
-.step-5 {
-    display: none;
-}
 
 
 
@@ -115,6 +110,9 @@ input {
    border: 5px solid black;
     display: flex;
   flex-direction: row-reverse;
+    height: 100px;
+
+  align-items: end;
     
 }
 .button-spacing{
@@ -148,7 +146,7 @@ button {
     background-image: url(./assets/images/bg-sidebar-desktop.svg);
     background-repeat: no-repeat;
     padding: 20px;
-    height: 600px;
+    height: 550px;
 
 }
 
@@ -187,12 +185,7 @@ strong {
 }
 
 /* step 2 */
-.content-2{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-}
+
 .box-plan{
     display: flex;
     flex-direction:row;
@@ -205,12 +198,13 @@ strong {
    
     border: 1px solid var(--Purplish-blue);
     width: 25%;
-    height: 160px;
+  
    border-radius: 5%;
    display: flex;
    align-items: baseline;
    flex-direction: column;
  justify-content: space-between;
+
  margin-bottom: 20px;
 
   
@@ -312,9 +306,6 @@ strong {
 }
 .add-check > input[type="checkbox"]{
     width: 30%;
- 
-}
-input[type="checkbox"]{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -326,6 +317,7 @@ input[type="checkbox"]{
     box-shadow: none;
     font-size: 1em;
 }
+
 input[type="checkbox"]:checked{
     background-color: var(--Purplish-blue);
 }
