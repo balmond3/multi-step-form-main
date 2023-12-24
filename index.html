@@ -29,7 +29,7 @@
     <div class="row ">
       <div class="col-4 Sidebar">
         <div class="p-2 number">
-          <div class="circle">1</div>
+          <div class="circle" id="circle1">1</div>
           <div class="steps">Step 1
             <strong>Your info</strong>
           </div>
@@ -37,14 +37,14 @@
 
 
         <div class="p-2 number">
-          <div class="circle">2</div>
+          <div class="circle" id="circle2" style="background-color: transparent; color: white;">2</div>
           <div class="steps">Step 2
             <strong>Select plan</strong>
           </div>
         </div>
 
         <div class="p-2 number">
-          <div class="circle">3</div>
+          <div class="circle" id="circle3" style="background-color: transparent; color: white;">3</div>
           <div class="steps">
             Step 3
             <strong>Add-ons</strong>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="p-2 number">
-          <div class="circle">4</div>
+          <div class="circle" id="circle4" style="background-color: transparent; color: white;">4</div>
           <div class="steps"> Step 4
             <strong>Summary</strong>
           </div>
@@ -129,17 +129,18 @@
 
 
           </div>
+          <div class="toggle-content">
           <div class="toggle">
            <span class="monthly-toggle">Monthly</span> 
             <label class="toggle-container">
               <input type="checkbox">
-              <div class="toggle-background">
+              <div class="toggle-background" >
                 <div class="toggle-handle"></div>
               </div>
             </label>
-            <span class="yearly-toggle">Yearly</span>
+            <span class="yearly-toggle" style="color:hsl(231, 11%, 63%);">Yearly</span>
           </div>
-        
+        </div>
         </div>
 
 
@@ -220,6 +221,9 @@
 
         <div class="p-2 blur"> Double-check everything looks OK before confirming.</div>
 
+      </div>
+      <div class="button-container button-spacing"><button type="button" class="go-back" id="prevBtn4">Go Back</button>
+        <button type="button" id="nextBtn4"> Next Step</button>
       </div>
     </div>
     <!-- Dynamically add subscription and add-on selections here -->
